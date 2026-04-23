@@ -1,5 +1,6 @@
 ---
 title: "Homework 4 Draft"
+bibliography: hw_4.bib
 output: 
   flexdashboard::flex_dashboard:
     vertical_layout: fill
@@ -487,4 +488,4 @@ References
 ===================================== 
 
 
-Preparing the dashboard based upon the instructions from magallanes_rers_data_2022
+Preparing the dashboard based upon the instructions from @magallanes_reyes_data_2022, and @aden-buie_flexdashboard_2026.
