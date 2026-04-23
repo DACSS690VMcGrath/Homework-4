@@ -485,3 +485,6 @@ readRDS(url(link_improved))
 
 References
 ===================================== 
+
+
+Preparing the dashboard based upon the instructions from magallanes_rers_data_2022
