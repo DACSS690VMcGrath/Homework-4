@@ -404,6 +404,10 @@ improved_plot <- ggplot(city_scores_long, aes(x = city, y = value)) +
     panel.spacing  = unit(1.2, "lines"),
     plot.title     = element_text(face = "bold"),
     plot.subtitle  = element_text(color = "grey40", size = 9)
+  )+
+  theme(
+    axis.text.y = element_text(size = 6),
+    plot.margin = margin(t = 10, r = 10, b = 5, l = 30)
   )
 
 saveRDS(original_plot, file = "original_plot.rds")
@@ -422,8 +426,9 @@ Column {data-width=550}
 
 ```{r}
 
-arrest_plot
-
+#arrest_plot
+link_arrest = "https://github.com/DACSS690VMcGrath/Homework-4/raw/main/arrest_plot.rds"
+readRDS(url(link_arrest))
 ```
 
 Column {data-width=450}
@@ -434,13 +439,20 @@ Column {data-width=450}
 ```{r}
 
 
-covid_plot
+#covid_plot
+#https://github.com/DACSS690VMcGrath/Homework-4/raw/main/covid_plot.rds
+link_covid = "https://github.com/DACSS690VMcGrath/Homework-4/raw/main/covid_plot.rds"
+readRDS(url(link_covid))
 ```
 
 ### Distribution of Ages of Racial Groups
 
 ```{r}
-num_cat_plot
+#num_cat_plot - https://github.com/DACSS690VMcGrath/Homework-4/raw/main/num_cat_plot.rds
+
+link_num_cat = "https://github.com/DACSS690VMcGrath/Homework-4/raw/main/num_cat_plot.rds"
+readRDS(url(link_num_cat))
+
 
 
 ```
@@ -455,17 +467,19 @@ Column {.tabset}
 
 ```{r}
 
-original_plot
+#original_plot - https://github.com/DACSS690VMcGrath/Homework-4/raw/main/original_plot.rds
+
+link_original = "https://github.com/DACSS690VMcGrath/Homework-4/raw/main/original_plot.rds"
+readRDS(url(link_original))
 
 ```
 
 ### After
 ```{r}
-improved_plot+
-  theme(
-    axis.text.y = element_text(size = 6),
-    plot.margin = margin(t = 10, r = 10, b = 5, l = 30)
-  )
+#improved_plot  https://github.com/DACSS690VMcGrath/Homework-4/raw/main/improved_plot.rds
+
+link_improved = "https://github.com/DACSS690VMcGrath/Homework-4/raw/main/improved_plot.rds"
+readRDS(url(link_improved))
 ```
 
 
